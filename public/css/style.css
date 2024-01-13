@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    /* -webkit-font-smoothing: antialiased; */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 0.9px;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+.navbar {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1280px;
+}
+.navbar a {
+    margin-right: 16px;
+}
+.navbar a,
+.navbar a:visited {
+    color: black;
+}
+.navbar a:hover {
+    color: grey;
+}
+main > .container {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1280px;
+}
+/* body > header,
+body > main,
+body > footer {
+    padding: 8px;
+} */
+
+img,
+picture,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a,
+a:visited {
+    color: #6363ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a1a1ff;
+}
+
+button {
+    background-color: unset;
+    border: solid 2px #525252;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 2px 16px;
+}
+button:hover {
+    background-color: #e5e5e5;
+}
+button:active {
+    background-color: #a3a3a3;
+}
+
+form .group {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+form .group > label {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+input {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: solid 2px #a3a3a3;
+}
